@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: poppins, sans-serif;
+        
+            padding: 0;
+            margin: 0;
+        }
+       
+        #container{
+            background-color: gray;
+            width: 700px;
+            height: 400px;
+            display: flex;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.404);
+                
+        }
+        .btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+                                  
+        }
+        .btn-login{
+            padding: 10px;
+            width: 190px;
+            border: none;
+            margin-top: 10px;
+            margin-bottom:10px;
+            border-radius: 5px;
+            transition: 500ms;
+            
+        }
+        .btn-login:hover{
+            background-color:rgb(37, 37, 37) ;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            width: 220px;
+            transition: 500ms;
+            
+        }
+        form{
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 45px;
+                        
+        }
+
+        form div button{
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            transition: 500ms;
+            
+        }
+        form div button:hover{
+            transition: 500ms;
+            background-color: rgb(37, 37, 37);
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+                       
+        }
+        .input-entrar{
+            width: 190px;
+            outline: none;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: none;
+            transition: 500ms;
+        }
+        .input-entrar:hover{
+            transition: 500ms;
+            width: 90%;
+        }
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           height: 100vh;
+        }
+
+        #remember-password{
+            color: white;
+            text-decoration: none;
+        }
+        #remember-password:hover{
+            color: rgb(37, 37, 37);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <form action="#">
+                <div>
+                    <h1>Entrar</h1>
+                    <p>Entre na sua conta e saiba mais sobre (Nome).</p>
+                    <div>
+                        <label for="email">Email</label>
+                        <br>
+                        <input class="input-entrar" type="email" placeholder="Email ou username">
+                    </div>
+                    <div>
+                        <label for="password">Senha</label>
+                        <br>
+                        <input class="input-entrar" type="password" placeholder="Digite sua senha">
+                    </div>
+                    <div>
+                        <input type="checkbox" >
+                        <label for="remember">Lembrar email e senha</label>
+                    </div>
+                    <button>Entrar</button>
+                    <br>
+                    <a id="remember-password" href="#">Esqueci minha senha</a>
+                </div>
+            </form>
+            <hr>
+            <div class="btn">
+                <button class="btn-login">Login com Google</button>
+                <button class="btn-login">Login com Facebook</button>
+                <button class="btn-login">Login com Twitter</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
